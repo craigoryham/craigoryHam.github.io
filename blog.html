@@ -7,24 +7,18 @@
     <title>Craig Hamilton</title>
     <style>
         header{
-            height: 40px;
-            margin-bottom: 30px;
+            height: 80px
         }
 
         .navigation-container h1 a:hover {
 			color: #f1f1f1;
-            font-size: 28px;
 		}
 
 		.navigation-container h1 a.current {
 			color: #f1f1f1;
-            font-size: 28px;
-		}
-        .navigation-container h1 a.passive {
-            font-size: 28px;
+            font-size:30px
 		}
         body {
-            
             background: linear-gradient(180deg, #2b2727, #151618);
             font-family: 'Abel', sans-serif;
             text-align: center;
@@ -37,9 +31,6 @@
             height: 100vh;
             margin: 0;
         }
-        footer{
-            margin-top: 120px;
-        }
 
         h1, h2 {
             font-weight: bold;
@@ -48,15 +39,13 @@
         h1 {
             font-size: 48px;
             font-family: 'Lato', sans-serif;
-            letter-spacing: 2px;
+            letter-spacing: 4px;
         }
 
         a {
             text-decoration: none;
             color: inherit;
-            font-size: 40px;
-            transition: color 0.5s;
-            text-align: center;
+            font-size: 24px;
         }
 
         .placeholder-image {
@@ -94,21 +83,19 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: flex-start;
-            padding: 0;
-            max-width: 100%;
-            }
-        .text-container {
-            
-            text-align: left;
-            margin-left: 200px;
-            margin-top: inherit;
-            flex: 1;
-            max-width: calc(100% - 390px);
-            }   
+            width: 100%;
+        }
 
+        .text-container {
+            text-align: left;
+            margin-left: 20px;
+            margin-top: 8px;
+            flex: 1;
+            max-width: calc(100% - 20px);
+        }
 
         p, h2 {
-            font-size: 40px;
+            font-size: 48px;
             margin: 0;
             word-wrap: break-word;
         }
@@ -136,24 +123,15 @@
     </style>
 </head>
 <header>
+    <div class="navigation-container">
+    <h1><a href="index.html">HOME</a> <a href="blog.html" class="current">BLOG</a></h1>
+    </div>
 </header>
 <body>
     <div class="parent-container">
-        <img src="Images/Craig_Portrait_test.jfif" alt="Craig Hamilton Portrait" class="placeholder-image">
-        <div class="text-container">
-            <p>
-                <span class="bold">CRAIG HAMILTON</span>, ALSO KNOWN AS <span class="bold">CRAIGORY HAM</span>, HAS BEEN CREATING MUSIC FOR 20 YEARS AND COMPOSING FOR VIDEO GAMES SINCE 2012, MOST NOTABLY THE <span class="bold">EVOCATIVE SOUNDSCAPES</span> OF <span class="bold"><a href="https://store.steampowered.com/app/333640/Caves_of_Qud/" class="bold">CAVES OF QUD</a></span>.
-                <br>
-                <BR>
-                <div class="navigation-container">
-                    <h1><a href="https://www.soundcloud.com/craigoryham" class="passive">HEAR MUSIC</a><br>
-                    <!--<a>READ BLOG (COMING SOON)</a><br> --> 
-                    <a href="mailto:hamilton.craig88@gmial.com" class="passive">CONTACT CRAIG</a><br>
-                </h1>
-                </div>
-            </p>
+        <div class="content-container">
+            <span class="bold">COMING SOON</span>
         </div>
-
     </div>
 </body>
 </html>
