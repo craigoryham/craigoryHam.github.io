@@ -1,1 +1,141 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Lato|Montserrat&display=swap" rel="stylesheet">
+    <title>Craig Hamilton</title>
+    <style>
+        body {
+            background: linear-gradient(1deg, #2b2727, #2c2f33);
+            font-family: 'Abel', sans-serif;
+            text-align: center;
+            color: #e5a471;
+            font-weight: 300;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1, h2 {
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-family: 'Lato', sans-serif;
+            letter-spacing: 4px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 24px;
+        }
+
+        .placeholder-image {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        .white-text {
+            color: #f1f1f1;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .parent-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding: 0 20px;
+        }
+
+        .content-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        .text-container {
+            text-align: left;
+            margin-left: 20px;
+            margin-top: 20px;
+            flex: 1;
+            max-width: calc(100% - 20px);
+        }
+
+        p, h2 {
+            font-size: 48px;
+            margin: 0;
+            word-wrap: break-word;
+        }
+
+        .top-text {
+            width: 100%;
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
+        }
+
+        .email {
+            color: #f1f1f1;
+            font-size: 32px;
+            margin-top: 30px;
+            margin-bottom: -50px;
+        }
+
+        @media (max-width: 768px) {
+            .text-container {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="index.html">CRAIG HAMILTON</a></h1>
+    <div class="parent-container">
+        <div class="top-text">
+            <p>
+                <span class="bold">CRAIG HAMILTON</span>, ALSO KNOWN AS <span class="bold">CRAIGORY HAM</span> HAS BEEN CREATING MUSIC FOR 17 YEARS AND COMPOSING FOR VIDEO GAMES SINCE 2012.
+            </p>
+        </div>
+        <div class="content-container">
+            <img src="images/Craig_Portrait_test.jfif" alt="Craig Hamilton Portrait" class="placeholder-image">
+            <div class="text-container">
+                <h2 class="white-text">
+                    KNOWN FOR <span class="bold">EVOCATIVE SOUNDSCAPES</span> IN <span class="italic">VIDEO GAMES</span>
+                </h2>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p class="email">
+                    Feel free to email me at: <a href="mailto:hamilton.craig88@gmail.com" class="email">hamilton.craig88@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
