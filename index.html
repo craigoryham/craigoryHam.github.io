@@ -110,106 +110,112 @@
 
 
         /* Tablet Portrait */
-        @media only screen and (min-device-width: 768px) and (max-device-width:1024px) and (orientation: portrait){
-            .parent-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .text-container {
-                margin-left: 0;
-                margin-top: 0; /**/
-                max-width: 100%;
-            }
-
-            .placeholder-image {
-                margin-top: 0px;
-                width: 75%;
-                height: auto;
-            }
-        body {
-            background: linear-gradient(180deg, #f0e3d6, #df950d, #ce3009,#ca095a);
-            font-family: 'Abel', sans-serif;
-            text-align: center;
-            color: #272727;
-            font-weight: 300;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: auto;
-            margin: 0;
-            padding-top: 60px;
-        }
-        }
-        /* Tablet Landscape */
-        @media only screen and (max-width: 768px) and (max-device-width:1024px) and (orientation: landscape) {
-        .parent-container {
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: center;
-        }
-
-        .text-container {
-            margin-left: 0px;
-            margin-top: 0;
-            max-width: calc(100%); /*260px*/
-        }
-        /* seems to affect cellphone landscape */
-        .placeholder-image {
-            margin-top: 0px; /*down from 200 which took up the entire screen*/
-            width: 400px; /*up from 300px*/
-            height: auto;
-        }
-
-        p, h2 {
-            font-size: 30px;
-            margin: 0;
-            word-wrap: break-word;
-        }
-        body {
-            background: linear-gradient(180deg, #f0e3d6, #df950d, #ce3009,#ca095a);
-            font-family: 'Abel', sans-serif;
-            text-align: center;
-            color: #272727;
-            font-weight: 300;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: auto;
-            width: auto; /*added this*/
-            margin: 0;
-        }
-
-        }
-        /* Smartphone Portrait and Landscape */
-        @media only screen and (max-width: 480px) {
-        .placeholder-image {
-            margin-top: 40px;
-            width: 90%;
-            height: auto;
-        }              
-        p, h2 {
-            font-size: 30px;
-            margin: 0;
-            word-wrap: break-word;
-        }
-        body {
-            background: linear-gradient(180deg, #f0e3d6, #df950d, #ce3009,#ca095a);
-            font-family: 'Abel', sans-serif;
-            text-align: center;
-            color: #272727;
-            font-weight: 300;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: auto;
-            margin: 0;
-            padding-top: 60px;
-        }
+@media only screen and (min-device-width: 768px) and (max-device-width:1024px) and (orientation: portrait){
+    .parent-container {
+        flex-direction: column;
+        align-items: center;
     }
+
+    .text-container {
+        margin-left: 0;
+        margin-top: 0;
+        max-width: 100%;
+    }
+
+    .placeholder-image {
+        margin-top: 0px;
+        width: 75%;
+        height: auto;
+    }
+    body {
+        background: linear-gradient(180deg, #f0e3d6, #df950d, #ce3009,#ca095a);
+        font-family: 'Abel', sans-serif;
+        text-align: center;
+        color: #272727;
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 0;
+        padding-top: 60px;
+    }
+    p, h2 {
+        font-size: 24px;
+        margin: 0;
+        word-wrap: break-word;
+    }
+}
+/* Tablet Landscape */
+@media only screen and (max-width: 768px) and (max-device-width:1024px) and (orientation: landscape) {
+    .parent-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .text-container {
+        margin-left: 0px;
+        margin-top: 0;
+        max-width: calc(100%);
+    }
+
+    .placeholder-image {
+        margin-top: 0px;
+        width: 400px;
+        height: auto;
+    }
+
+    body {
+        background: linear-gradient(180deg, #f0e3d6, #df950d, #ce3009,#ca095a);
+        font-family: 'Abel', sans-serif;
+        text-align: center;
+        color: #272727;
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+    p, h2 {
+        font-size: 30px;
+        margin: 0;
+        word-wrap: break-word;
+    }
+}
+
+/* Smartphone Portrait and Landscape */
+@media only screen and (max-width: 480px) {
+    .placeholder-image {
+        margin-top: 40px;
+        width: 90%;
+        height: auto;
+    }              
+    body {
+        background: linear-gradient(180deg, #f0e3d6, #df950d, #ce3009,#ca095a);
+        font-family: 'Abel', sans-serif;
+        text-align: center;
+        color: #272727;
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 0;
+        padding-top: 60px;
+    }
+    p, h2 {
+        font-size: 24px;
+        margin: 0;
+        word-wrap: break-word;
+    }
+}
+
 
 </style>
 </head>
