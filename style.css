@@ -1,0 +1,222 @@
+        .navigation-container{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXpsog.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+        .navigation-container h1 a:hover {
+			color: #ec312b;
+            font-size: 28px;
+		}
+
+		.navigation-container h1 a.current {
+			color: #f1f1f1;
+            font-size: 28px;
+		}
+
+        .navigation-container h1 a.passive {
+            font-size: 28px;
+		}
+
+        #body:hover {
+        background-color: yellow;
+        }
+
+
+        body {            
+            /*background: linear-gradient(180deg, #2b2927, #151618);*/
+            background: linear-gradient(150deg, #ffffff, #ecb040, #ce3009,#ca095a);
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            font-family: 'Abel', sans-serif;
+            text-align: center;
+            color: #272727;
+            font-weight: 300;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            
+        }
+        
+
+        h1, h2 {
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 35px;
+            font-family: 'Lato', sans-serif;
+            letter-spacing: 2px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 40px;
+            transition: color 0.5s;
+            text-align: center;
+        }
+
+        .placeholder-image {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            margin-bottom:10px;
+        }
+
+        .white-text {
+            color: #f1f1f1;
+        }
+
+        .bold {
+            font-weight: bold;
+            color: #272727;
+            word-wrap: break-word;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .parent-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding: 0 20px;
+        }
+
+        .content-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0;
+            max-width: 100%;
+            }
+
+        .text-container {            
+            text-align: left;
+            margin-left: 200px;
+            flex: 1;
+            max-width: calc(100% - 390px);
+            }   
+
+
+        p, h2 {
+            font-size: 40px;
+            margin: 0;
+            word-wrap: break-word;
+        }
+        .paragraph-text {
+            font-size: 30px;
+            margin: 0;
+            word-wrap: break-word;
+        }
+
+
+        /* Tablet Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width:1024px) and (orientation: portrait){
+    .parent-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container {
+        margin-left: 0;
+        margin-top: 0;
+        max-width: 100%;
+    }
+
+    .placeholder-image {
+        margin-top: 0px;
+        width: 75%;
+        height: auto;
+    }
+    body {
+        padding-top: 60px;
+    }
+    p, h2 {
+        font-size: 24px;
+        margin: 0;
+        word-wrap: break-word;
+    }
+}
+/* Tablet Landscape */
+@media only screen and (max-width: 768px) and (max-device-width:1024px) and (orientation: landscape) {
+    .parent-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .text-container {
+  text-align: left;
+  margin-left: 200px;
+  flex: 1;
+  max-width: calc(100% - 390px);
+  height: 100%;
+  overflow: auto;
+}
+
+    .placeholder-image {
+        margin-top: 0px;
+        width: 400px;
+        height: auto;
+    }
+
+    body {
+        width: auto;
+    }
+    p, h2 {
+        font-size: 30px;
+        margin: 0;
+        word-wrap: break-word;
+    }
+}
+
+/* Smartphone Portrait and Landscape */
+@media only screen and (max-width: 480px) {
+    .placeholder-image {
+        margin-top: 40px;
+        width: 90%;
+        height: auto;
+    }
+    p, h2 {
+        font-size: 14px;
+        margin: 0;
+        word-wrap: break-word;
+    }
+    .placeholder-image + p {
+        font-size: 14px;
+        margin: 0;
+        word-wrap: break-word;
+    }
+    .text-container {
+    margin-left: 0;
+    max-width: 100%;
+  }
+    .bold{
+        margin: 0 20px;
+    }
+              
+    body {        
+        padding-top: 60px;
+    }
+}
+    @media only screen and (max-width: 480px) and (orientation: portrait) {
+        .text-container {
+            text-align: justify;
+        }
+        .text-container p {
+            white-space:normal;
+        }
+    }
